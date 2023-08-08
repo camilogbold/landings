@@ -1,0 +1,17 @@
+<script>
+const script = document.createElement('script');
+script.src = 'https://bold.boost.ai/chatPanel/chatPanel.js';
+window.document.body.appendChild(script);
+    script.addEventListener('load', () => {
+      const options = {
+        chatPanel: {
+          header: {
+            title: 'Bold Agente Virtual',
+          },
+          styling: {
+            pace: 'supersonic',
+          },
+        },
+      };
+      const boost = window.boostInit('bold', options);
+</script>
